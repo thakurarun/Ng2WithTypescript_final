@@ -1,0 +1,26 @@
+<section class="content">
+	<legend class="title">Edit product</legend>
+
+	<div class="row">
+
+		<table class="table">
+			<thead>
+			</thead>
+			<tbody>
+				<tr>
+					<td><label for="name">Name</label></td>
+					<td><span>{{product.name}}</span></td>
+				</tr>
+                <tr>
+					<td><label for="price">Price</label></td>
+					<td><span>{{product.price}} INR</span></td>
+				</tr>
+                <tr>
+					<td><label for="category">Category</label></td>
+					<td><span>{{product.category.category}}</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+    <button class="btn btn-primary" [routerLink]="['/']">Back To List</button>
+</section>

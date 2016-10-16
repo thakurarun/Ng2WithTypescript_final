@@ -1,0 +1,20 @@
+<div>
+	<h3 class="title">
+		Product List
+	</h3>
+
+	<ul class="list-group">
+		<li *ngFor="let item of list" class="list-group-item">
+			<div>
+				<span class="badge">{{item.name}}</span>
+				<span class="pull-right">
+                    <a class="btn default" routerLink="/detail/{{item.id}}">Detail</a>
+					<a class="btn default" routerLink="/edit/{{item.id}}">Edit</a>
+                    <a class="btn default" (click)="deleteProduct(item.id)">Delete</a>
+                </span>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<div>{{diagnostic}}</div>
