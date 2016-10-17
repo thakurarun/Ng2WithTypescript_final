@@ -11,10 +11,12 @@ import { CreateComponent } from './app/create/create.component';
 import { DetailComponent } from './app/detail/detail.component';
 import { EditComponent } from './app/edit/edit.component';
 
+import { CurrencyFormatPipe } from './app/common/currency.pipe'
+
 @NgModule({
   imports: [BrowserModule, FormsModule, NgbModule.forRoot(), AppRoutingModule],
-  declarations: [AppComponent, ListComponent, CreateComponent, DetailComponent, EditComponent],
+  declarations: [AppComponent, ListComponent, CreateComponent, DetailComponent, EditComponent, CurrencyFormatPipe],
   bootstrap: [AppComponent],
-  providers :[]
+  providers: []
 })
 export class AppModule { }

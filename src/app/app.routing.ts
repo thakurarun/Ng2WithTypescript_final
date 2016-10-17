@@ -15,7 +15,8 @@ import { EditComponent } from './edit/edit.component';
             { path: 'create', component: CreateComponent },
             { path: 'detail/:id', component: DetailComponent },
             { path: 'edit/:id', component: EditComponent }
-        ], { useHash: true })
+        ])
+        //, { useHash: true })
     ],
     exports: [
         RouterModule
