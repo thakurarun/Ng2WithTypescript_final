@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core'
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-import { ProductService } from './../app.service'
-import * as model from './../models'
+import { ProductService, AutheticationService } from './../services/index';
+import * as model from './../models';
 @Component({
     selector: 'app-edit',
     templateUrl: 'src/app/edit/edit.html',
@@ -10,7 +10,6 @@ import * as model from './../models'
 })
 
 export class EditComponent {
-    @Input
     productId: number;
 
     product: model.IProduct;

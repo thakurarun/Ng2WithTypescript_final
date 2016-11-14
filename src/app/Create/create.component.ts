@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core'
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import * as model from './../models'
-import { ProductService } from './../app.service'
+import { ProductService, AutheticationService } from './../services/index';
 
 @Component({
     selector: 'app-create',

@@ -1,8 +1,7 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 import * as model from './../models';
-
-import { ProductService } from './../app.service';
+import { ProductService, AutheticationService } from './../services/index';
 
 @Component({
     selector: 'app-list',

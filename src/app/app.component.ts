@@ -1,10 +1,9 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-import { ListComponent } from './List/list.component'
+import { ListComponent } from './list/list.component'
 
 @Component({
     selector: 'my-app',
-    //template: '<app-list [list]="products"></app-list>',
     templateUrl: 'src/app/app.html',
     styleUrls: ['src/app/app.style.css'],
     encapsulation: ViewEncapsulation.None

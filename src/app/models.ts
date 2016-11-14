@@ -15,3 +15,10 @@ export class Product implements IProduct {
 export interface ICategory {
     category: string;
 }
+
+export interface IUser {
+    username: string;
+    password: string;
+    isAuthenticated: boolean;
+    name: string;
+}

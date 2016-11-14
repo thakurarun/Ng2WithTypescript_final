@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import * as model from './models'
+import * as model from './../models'
 
 const Categories: model.ICategory[] = [
     { category: "TV" },
